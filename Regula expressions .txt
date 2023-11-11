@@ -1,0 +1,36 @@
+**** Regula expressions ***
+
+Sequence of characters that defines a search pattern 
+
+re.search () : returns a match object if the seach is found 
+
+re.match(pattern, string) >> Returns a match object if the pattern found or else None .
+
+Meta chracaters :
+[] : Specifies a set of characters you wish to match 
+[^abc] : Invert character it specifies apart from a,b,c
+^ : If a string starts with certain character
+$ : "ENDS with Certain Character"
+* : Zero or more occurences 
++ : one or more occurences 
+? : Zero or one occurence 
+{2,3} - Min 3 max 3 repetiotions 
+a|b : either a or b or both 
+/A : Matches if the specified character are at the starting of string 
+/b : Matches if the specified character is at the start or at the end of the string 
+/B :Matches if the specified character is not at  the start or at the end of the string
+/d : Digits 
+/D : Not digits 
+/s : Only white space
+/S : No white space 
+\w : Matches any alpha numeric characters 
+/z : Matches if it is at the end of the string 
+
+re.findall() : returns a list when match found and if not there it returns an empty list 
+
+re.split() : Splits the string when there is a match and returns it as a list 
+re.sub() : replaces the particular patter with new string 
+re.sub(pattern,replace,string)
+
+re.subn() : replaces the particular pattern with new string and returns the o/p in a tuple and retunr the number of occurences 
+re.subn(pattern,replace,string)
